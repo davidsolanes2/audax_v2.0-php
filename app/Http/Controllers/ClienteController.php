@@ -16,8 +16,8 @@ class ClienteController extends Controller
 	}
 
 	public function index() {
-		$tipos = Contrato::all();
-		return view('clientes.index', compact('tipos'));
+		$tipos_contrato = Contrato::all();
+		return view('clientes.index', compact('tipos_contrato'));
 	}
 
 	public function save(Request $request) {
@@ -28,6 +28,7 @@ class ClienteController extends Controller
 		
 		$cliente = DB::table('clientes')->insert(array(
 			'nombre' => $request->input('name'),
+			'tipo_contrato' => $request->input('tipo')
  		));
 
 		return redirect()->route('home');
