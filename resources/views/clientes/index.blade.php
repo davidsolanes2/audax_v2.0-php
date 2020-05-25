@@ -26,11 +26,11 @@
                             <label for="" class="col-md-4 col-form-label text-md-right" style="margin-top: 1%;">Tipo Contrato</label>
                             <br/>  <br/>
                             <select name="" id="" class="form-control" style="margin-top: 1%; margin-left: 2%; width: 46%;">
-                                
+                                @foreach ($tipos as $tipo)
+                                    <option value="{{ $tipo['id']}}">{{ $tipo['tipo'] }}</option>
+                                @endforeach    
                             </select>
 
-                            
-                            
                         </div>
                  
                         <div class="form-group row mb-0">

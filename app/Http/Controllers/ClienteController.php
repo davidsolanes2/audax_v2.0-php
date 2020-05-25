@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
 use App\Cliente;
+use App\Contrato;
 
 class ClienteController extends Controller
 {
@@ -15,7 +16,8 @@ class ClienteController extends Controller
 	}
 
 	public function index() {
-		return view('clientes.index');
+		$tipos = Contrato::all();
+		return view('clientes.index', compact('tipos'));
 	}
 
 	public function save(Request $request) {
