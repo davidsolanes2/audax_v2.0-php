@@ -9,8 +9,8 @@ class Contrato extends Model
     protected $table = 'contratos';
 
     // relación de muchos a uno
-    public function cliente() {
-    	return $this->belongsTo('App\cliente', 'cliente_id');
-    }
+    // public function cliente() {
+    // 	return $this->belongsTo('App\cliente', 'cliente_id');
+    // }
 
 }

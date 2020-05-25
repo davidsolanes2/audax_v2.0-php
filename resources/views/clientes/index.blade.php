@@ -23,13 +23,13 @@
                                     </span>
                                 @enderror
                             </div>
-                            <!-- <label for="" class="col-md-4 col-form-label text-md-right">Tipo Contrato</label> -->
+                            <label for="" class="col-md-4 col-form-label text-md-right" style="margin-top: 1%;">Tipo Contrato</label>
+                            <br/>  <br/>
+                            <select name="" id="" class="form-control" style="margin-top: 1%; margin-left: 2%; width: 46%;">
+                                
+                            </select>
+
                             
-                            <!-- <select name="contrato_id" id="inputContrato_id" class="form-control">
-                                @foreach($contratos as $contrato)
-                                    <option value="{{ $contrato['id']}}">{{ $contrato['tipo'] }}</option>
-                                @endforeach
-                            </select> -->
                             
                         </div>
                  
