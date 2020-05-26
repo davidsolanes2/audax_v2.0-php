@@ -34,6 +34,13 @@ class ClienteController extends Controller
 		return redirect()->route('home');
 	}
 
+	public function listado() {
+		$cliente = DB::table('clientes')->get();
+
+		return view('listados.index', [
+			'cliente' => $cliente
+		]);
+	}
 
 }
 

@@ -32,3 +32,5 @@ Route::post('/cliente/save', 'ClienteController@save')->name('cliente.save');
 
 Route::get('/alta-contrato', 'ContratoController@contratos')->name('contratos.contratos');
 Route::post('/contrato/save', 'ContratoController@save')->name('contratos.save');
+
+Route::get('/listado', 'ClienteController@listado')->name('cliente.listado');

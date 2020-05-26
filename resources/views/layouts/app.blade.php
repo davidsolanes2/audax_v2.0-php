@@ -60,7 +60,7 @@
                                 <a href="{{ route('contrato') }}" class="nav-link">Contratos</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Listado Contratos</a>
+                                <a href="{{ route('cliente.listado') }}" class="nav-link">Listado Cliente/Contratos</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
